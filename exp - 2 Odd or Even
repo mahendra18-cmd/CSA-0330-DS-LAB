@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int a[10], n, i;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter %d numbers:\n", n);
+    for(i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    printf("\nResult:\n");
+    for(i = 0; i < n; i++) {
+        if(a[i] % 2 == 0)
+            printf("%d is Even\n", a[i]);
+        else
+            printf("%d is Odd\n", a[i]);
+    }
+
+    return 0;
+}
+
+
+OUTPUT :
+
+Enter number of elements: 5
+Enter 5 numbers:
+10 21 34 55 60
+
+10 is Even
+21 is Odd
+34 is Even
+55 is Odd
+60 is Even
